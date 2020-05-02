@@ -1,3 +1,4 @@
+ARG0:=
 ARG:=
 IMAGE_NAME:=ccompiler
 SRC:=9cc
@@ -12,8 +13,8 @@ build: ## docker build
 	docker build -t $(IMAGE_NAME) .
 
 .PHONY: run
-run: build ## docker run
-	docker run --rm $(IMAGE_NAME) $(ARG)
+run: ## docker run
+	docker run $(ARG0) --rm -v $(BASE_PATH)/$(SRC):/$(SRC) -w /$(SRC) $(IMAGE_NAME) $(ARG)
 
 .PHONY: test
 test: build ## make test on docker
