@@ -1,3 +1,6 @@
+# r12acc
+r12acc
+
 # Jetbrains
 .idea
 
@@ -6,7 +9,6 @@
 *.o
 tmp*
 a.out
-9cc
 
 # Prerequisites
 *.d

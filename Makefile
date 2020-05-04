@@ -1,7 +1,7 @@
 ARG0:=
 ARG:=
 IMAGE_NAME:=ccompiler
-SRC:=9cc
+SRC:=r12acc
 BASE_PATH:=$(shell pwd)
 
 .PHONY: help

@@ -6,15 +6,15 @@ CFLAGS=-std=c11 -g -static
 SRCS=$(wildcard *.c)
 OBJS=$(SRCS:.c=.o)
 
-9cc: $(OBJS)
-	$(CC) -o 9cc $(OBJS) $(LDFLAGS)
+r12acc: $(OBJS)
+	$(CC) -o r12acc $(OBJS) $(LDFLAGS)
 
-$(OBJS): 9cc.h
+$(OBJS): r12acc.h
 
-test: 9cc
+test: r12acc
 	bash ./test.sh
 
 clean:
-	rm -f 9cc *.o *~ tmp*
+	rm -f r12acc *.o *~ tmp*
 
 .PHONY: test clean

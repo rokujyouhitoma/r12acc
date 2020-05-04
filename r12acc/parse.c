@@ -1,7 +1,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-#include "9cc.h"
+#include "r12acc.h"
 
 Node *new_node(NodeKind kind) {
   Node *node = calloc(1, sizeof(Node));
