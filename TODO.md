@@ -1,3 +1,9 @@
+# Learn C compiler
+
+ - [低レイヤを知りたい人のためのCコンパイラ作成入門](https://www.sigbus.info/compilerbook)
+ - [コンパイラ作りのススメ - sukesan1984](https://scrapbox.io/sukesan1984/%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%A9%E4%BD%9C%E3%82%8A%E3%81%AE%E3%82%B9%E3%82%B9%E3%83%A1)
+
+# TODO List
 
  - [x] [機械語とアセンブラ](https://www.sigbus.info/compilerbook#%E6%A9%9F%E6%A2%B0%E8%AA%9E%E3%81%A8%E3%82%A2%E3%82%BB%E3%83%B3%E3%83%96%E3%83%A9)
    - [x] [CPUとメモリ](https://www.sigbus.info/compilerbook#cpu%E3%81%A8%E3%83%A1%E3%83%A2%E3%83%AA)

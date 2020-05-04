@@ -1,8 +1,3 @@
-# Learn C compiler
-
- - [低レイヤを知りたい人のためのCコンパイラ作成入門](https://www.sigbus.info/compilerbook)
- - [コンパイラ作りのススメ - sukesan1984](https://scrapbox.io/sukesan1984/%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%A9%E4%BD%9C%E3%82%8A%E3%81%AE%E3%82%B9%E3%82%B9%E3%83%A1)
-
 # Environment
 
 ```
