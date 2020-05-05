@@ -3,7 +3,12 @@ assert() {
   expected="$1"
   input="$2"
 
+  echo "------------------------------------------------------------"
+  echo "expected: '$expected'"
+  echo "input: '$input'"
+  echo "----------"
   ./r12acc "$input" > tmp.s
+  cat tmp.s
   gcc -static -o tmp tmp.s
   ./tmp
   actual="$?"
