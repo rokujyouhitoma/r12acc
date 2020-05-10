@@ -3,24 +3,28 @@
 //
 
 typedef enum {
-  ND_ADD, // +
-  ND_SUB, // -
-  ND_MUL, // *
-  ND_DIV, // /
-  ND_EQ,  // ==
-  ND_NE,  // !=
-  ND_LT,  // <
-  ND_LE,  // <=
-  ND_NUM, // Integer
+  ND_ADD,       // +
+  ND_SUB,       // -
+  ND_MUL,       // *
+  ND_DIV,       // /
+  ND_ASSIGN,    // =
+  ND_LVAR,      // Local variable
+  ND_NUM,       // Integer
+  ND_EQ,        // ==
+  ND_NE,        // !=
+  ND_LT,        // <
+  ND_LE,        // <=
 } NodeKind;
 
 // AST node type
 typedef struct Node Node;
+
 struct Node {
   NodeKind kind; // Node kind
   Node *lhs;     // Left-hand side
   Node *rhs;     // Right-hand side
   int val;       // Used if kind == ND_NUM
+  int offset;    // Used if kind == ND_LVAR
 };
 
 bool consume(char *op);
@@ -70,4 +74,6 @@ char *user_input;
 Token *token;
 
 void error(char *fmt, ...);
+Token *consume_ident(void);
 Token *tokenize();
+bool at_eof();
