@@ -145,3 +145,7 @@ echo $?
 ```
 
 ## [ステップ8: ファイル分割とMakefileの変更](https://www.sigbus.info/compilerbook#%E3%82%B9%E3%83%86%E3%83%83%E3%83%978-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%88%86%E5%89%B2%E3%81%A8makefile%E3%81%AE%E5%A4%89%E6%9B%B4)
+
+```
+make run ARG0=-it ARG=/bin/sh
+```
